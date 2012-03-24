@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity Name="cf2df1be-aa1f-4094-b81f-879a595dafaf"
+            Publisher="CN=Chaitanya"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>OSUEvents</DisplayName>
+    <PublisherDisplayName>Chaitanya</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+    <Description>OSUEvents</Description>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="OSUEvents.App">
+        <VisualElements
+            DisplayName="OSUEvents"
+            Logo="Assets\Logo.png"
+            SmallLogo="Assets\SmallLogo.png"
+            Description="OSUEvents"
+            ForegroundText="light"
+            BackgroundColor="#222222">
+            <DefaultTile ShowName="allLogos" />
+            <SplashScreen Image="Assets\SplashScreen.png" />
+        </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
